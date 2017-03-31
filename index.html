@@ -3,7 +3,7 @@
 	<head>
 		<meta charset=“utf-8” />
         <link rel="stylesheet" href="css/reset.css">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
         <link rel="stylesheet" href="css/ionicons.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/queries.css">
@@ -42,9 +42,32 @@
 			
 
 			<li class="active-task">
-					<div class="highlight"></div>
-					<p id="p1" class="tasks"><input type="checkbox" class="filled-in" id="box2"><label for="box2">d</label><i class="task-menu material-icons right dropdown-button" data-activates="dropdown2">view_list</i>
-						<ul id="dropdown2" class="dropdown-content">
+					<p id="p1" class="tasks"><input type="checkbox" class="filled-in high-priority" id="box2"><label for="box2">d</label><i class="task-menu material-icons right dropdown-button" data-activates="dropdown2">view_list</i>
+						<ul id="dropdown2" class="dropdown-content main-dropdown-content">
+							<li class="priority-btn list-edit">
+								<a href="#" class="priority-btn dropdown-button" data-activates="dropdown3">
+									<i class="priority-btn material-icons">assessment</i>
+								</a>
+							</li>
+
+							<ul id="dropdown3" class="dropdown-content nested-dropdown-content">
+								<li class="li--priority-color high-priority-background-menu">
+									<a href="#">
+										<i class="material-icons"></i>
+									</a>
+								</li>
+								<li class="li--priority-color medium-priority-background-menu">
+									<a href="#">
+										<i class="material-icons"></i>
+									</a>
+								</li>
+								<li class="li--priority-color low-priority-background-menu">
+									<a href="#">
+										<i class="material-icons"></i>
+									</a>
+								</li>
+							</ul>
+
 							<li class="edit-btn list-edit">
 								<a href="#">
 									<i class="material-icons">mode_edit</i>
@@ -52,17 +75,13 @@
 							</li>
 							<li class="divider"></li>
 							<li class="delete-btn list-edit">
-								<a href="#" class="test-btn dropdown-button" data-activates="dropdown3">
+								<a href="#" class="dropdown-button">
 									<i class="delete-btn material-icons" >delete</i>
 								</a>
 							</li>
-							<ul id="dropdown3" class="dropdown-content">
-										<li class="edit-btn list-edit">
-											<a href="#">
-												<i class="material-icons">mode_edit</i>
-											</a>
-										</li>
-									</ul>
+							<li class="divider"></li>
+							
+
 						</ul>
 					</p>
 				</li>
@@ -77,7 +96,15 @@
 		
 			</ul>
 		</form>
-		-->
+
+		<ul id="dropdown3" class="dropdown-content">
+			<li class="edit-btn list-edit">
+				<a href="#">
+					<i class="material-icons">mode_edit</i>
+				</a>
+			</li>
+		</ul>
+	-->
 		</div>
 
 

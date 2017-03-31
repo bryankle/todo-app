@@ -29,7 +29,7 @@ var todoApp = (function() {
 	}
 
 	var init = function() {
-		$('.test-btn').dropdown();
+		$('.priority-btn').dropdown();
 
 		var events = {
 			addTaskButton: references.addTaskButton.addEventListener('click', actions.addNewTask),

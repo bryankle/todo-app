@@ -5343,8 +5343,14 @@ button.btn-floating {
   text-align: left;
   text-transform: none;
 }
-
+/* EDITED TO OVER RIDE SUB-MENU PRIORITY DROP DOWN. CHANGED TO AVOID COLOR CHANGE ON HOVER WHEN SELECTING PRIORITY*/
+/*
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+  background-color: #eee;
+}
+*/
+
+.main-dropdown-content .list-edit:hover, .main-dropdown-content .list-edit.active, .main-dropdown-content .list-edit.selected {
   background-color: #eee;
 }
 
