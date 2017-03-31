@@ -52,6 +52,7 @@
 
 .tasks {
 	height:25px;
+	z-index:10;
 }
 
 // Task items
@@ -60,12 +61,26 @@
 	li {
 		height: 21px;
 		margin-bottom:3px;
+		position:relative;
+		z-index:10;
 		p {
 		}
-		:hover {
-			background-color:red;
-		}
-	}
+		
+	} 
 
 }
 
+.active-task {
+	z-index:99;
+}
+
+.highlight {
+	z-index:-100;
+	background-color:red;
+	position:absolute;
+	opacity:.2;
+	width:317px;
+	height:21px;
+	left:23px;
+	
+}

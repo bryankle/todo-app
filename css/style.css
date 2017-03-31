@@ -44,12 +44,25 @@
   right: 3.5px; }
 
 .tasks {
-  height: 25px; }
+  height: 25px;
+  z-index: 10; }
 
 #task-list li {
   height: 21px;
-  margin-bottom: 3px; }
-  #task-list li :hover {
-    background-color: red; }
+  margin-bottom: 3px;
+  position: relative;
+  z-index: 10; }
+
+.active-task {
+  z-index: 99; }
+
+.highlight {
+  z-index: -100;
+  background-color: red;
+  position: absolute;
+  opacity: .2;
+  width: 317px;
+  height: 21px;
+  left: 23px; }
 
 /*# sourceMappingURL=style.css.map */
