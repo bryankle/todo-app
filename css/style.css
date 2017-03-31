@@ -16,7 +16,7 @@
 #completed-list {
   display: none; }
 
-.right-box {
+.container--add-task {
   margin-top: 25px; }
 
 #completed-list-container li {
@@ -25,8 +25,26 @@
   padding-left: 5%;
   border-bottom: 1px solid #9e9e9e; }
 
+/* TASK MENU ICON FOR EDITING AND DELETING */
+/* EDIT MATERIALIZE CSS LIBRARY */
+.dropdown-content {
+  background-color: #fff;
+  margin: 0;
+  display: none;
+  min-width: 30px;
+  max-width: 500px;
+  max-height: 650px;
+  overflow-y: visible;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  will-change: width, height; }
+  .dropdown-content .dropdown-content {
+    margin-left: 100%; }
+
 .task-menu {
-  display: none; }
+  display: none;
+  margin-right: 10px; }
 
 .task-menu:hover {
   cursor: pointer; }
@@ -48,8 +66,6 @@
   z-index: 10; }
 
 #task-list li {
-  height: 21px;
-  margin-bottom: 3px;
   position: relative;
   z-index: 10; }
 

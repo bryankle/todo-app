@@ -20,13 +20,13 @@
 				<input placeholder="What am I doing?" id='add-task-field' type="text" maxlength="20" onkeydown = "if (event.keyCode == 13)
 	            	document.getElementById('add-task-btn').click()">
 			</div>
-			<div class='right-box col s4'>
+			<div class='container--add-task col s4'>
 				<a id='add-task-btn' class="waves-effect waves-light btn">
-					<i class="material-icons">library_add</i>
+					<i class="icon--add-task material-icons">library_add</i>
 				</a>
 			</div>
 
-			<div class="col s12">
+			<div class="container--tabs col s12">
 				<ul class="tabs tabs-fixed-width">
 					<li id="tab-1" class="tab col 4"><a href="tab1">Tasks</a></li>
 					<li id="tab-2" class="tab col 4"><a href="tab2">Completed</a></li>
@@ -43,8 +43,30 @@
 
 			<li class="active-task">
 					<div class="highlight"></div>
-					<p id="p1" class="tasks"><input type="checkbox" class="filled-in" id="box2"><label for="box2">d</label><i class="task-menu material-icons right dropdown-button" data-activates="dropdown2">view_list</i><ul id="dropdown2" class="dropdown-content"><li class="edit-btn list edit"><a href="#"><i class="material-icons">mode_edit</i></a></li><li class="divider"></li><li class="delete-btn list edit"><a href="#"><i class="delete-btn material-icons">delete</i></a></li></ul></p></li>
-				
+					<p id="p1" class="tasks"><input type="checkbox" class="filled-in" id="box2"><label for="box2">d</label><i class="task-menu material-icons right dropdown-button" data-activates="dropdown2">view_list</i>
+						<ul id="dropdown2" class="dropdown-content">
+							<li class="edit-btn list-edit">
+								<a href="#">
+									<i class="material-icons">mode_edit</i>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li class="delete-btn list-edit">
+								<a href="#" class="test-btn dropdown-button" data-activates="dropdown3">
+									<i class="delete-btn material-icons" >delete</i>
+								</a>
+							</li>
+							<ul id="dropdown3" class="dropdown-content">
+										<li class="edit-btn list-edit">
+											<a href="#">
+												<i class="material-icons">mode_edit</i>
+											</a>
+										</li>
+									</ul>
+						</ul>
+					</p>
+				</li>
+		
 
 		</ul>
 			

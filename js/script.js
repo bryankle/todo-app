@@ -29,6 +29,7 @@ var todoApp = (function() {
 	}
 
 	var init = function() {
+		$('.test-btn').dropdown();
 
 		var events = {
 			addTaskButton: references.addTaskButton.addEventListener('click', actions.addNewTask),
@@ -189,7 +190,9 @@ var todoApp = (function() {
 				}
 			}
 			else if (references.currentTab == 'all') {
-				li.style.display = 'block';
+				if (li == true) {
+					li.style.display = 'block';
+				}
 				//li.style.opacity = 1;
 				//this.unfade(li);
 			}
@@ -266,7 +269,7 @@ var todoApp = (function() {
 				ul.id = 'dropdown' + references.totalTasks;
 				ul.className = 'dropdown-content';
 				var liEdit = document.createElement('li');
-					liEdit.className = 'edit-btn list edit';
+					liEdit.className = 'edit-btn list-edit';
 					console.log(this)
 					liEdit.addEventListener('click', actions.editExistingTask);
 					ul.appendChild(liEdit);
@@ -282,7 +285,7 @@ var todoApp = (function() {
 					liDivider.className = 'divider';
 					ul.appendChild(liDivider);
 				var liDelete = document.createElement('li');
-					liDelete.className = 'delete-btn list edit';
+					liDelete.className = 'delete-btn list-edit';
 					liDelete.addEventListener('click', actions.deleteTask);
 
 					console.log(this);
