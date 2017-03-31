@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=“utf-8” />
+        <link rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="css/ionicons.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/queries.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+	<body>
+
+	<div id="container">
+		<h1>To Do</h1>
+
+
+		<div class="row">
+			<div class="input-field col s8">
+				<input placeholder="What am I doing?" id='add-task-field' type="text" maxlength="20" onkeydown = "if (event.keyCode == 13)
+	            	document.getElementById('add-task-btn').click()">
+			</div>
+			<div class='right-box col s4'>
+				<a id='add-task-btn' class="waves-effect waves-light btn">
+					<i class="material-icons">library_add</i>
+				</a>
+			</div>
+
+			<div class="col s12">
+				<ul class="tabs tabs-fixed-width">
+					<li id="tab-1" class="tab col 4"><a href="tab1">Tasks</a></li>
+					<li id="tab-2" class="tab col 4"><a href="tab2">Completed</a></li>
+					<li id="tab-3" class="tab col 4"><a href="tab3">All</a></li>
+				</ul>
+			</div>
+
+		</div>
+		
+		<form action="#">
+		
+		<ul id="task-list"></ul>
+
+		</form>
+		<!--
+		<form id="completed-list" action="#">
+			<ul id="completed-list-container">
+		
+			</ul>
+		</form>
+		-->
+		</div>
+
+
+
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+	</body>
+</html>

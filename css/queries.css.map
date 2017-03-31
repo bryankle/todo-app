@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oEAAoE;AAOpE,qDAAqD;AAKrD,qDAAqD;AAMrD,uCAAuC;AACvC,yCAA0C;EACzC,SAAS,EAAC,IAAI",
+"sources": ["queries.scss"],
+"names": [],
+"file": "queries.css"
+}
