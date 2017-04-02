@@ -40,16 +40,26 @@
   overflow-y: visible;
   opacity: 0;
   position: absolute;
-  z-index: 999;
   will-change: width, height;
   .dropdown-content {
   	margin-left:100%;
   }
 }
 
+
+
+.dropdown-button {
+	z-index:-99999;
+}
+
+
 .task-menu {
 	display:none;
 	margin-right:10px;
+}
+
+.list-edit {
+	z-index:1;
 }
 
 .task-menu:hover {
@@ -79,12 +89,9 @@
 
 .tasks {
 	height:25px;
-	z-index:10;
 }
 
-.list-edit {
-	
-}
+
 
 // Task items
 
@@ -92,16 +99,10 @@
 	li {
 		
 		position:relative;
-		z-index:10;
 		p {
 		}
 		
 	} 
-
-}
-
-.active-task {
-	z-index:99;
 
 }
 
@@ -128,13 +129,25 @@
 .high-priority[type="checkbox"].filled-in:not(:checked) + label:after {
 	border: 2px solid #D1797D;	
 }
+.high-priority[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #D1797D;
+  background-color: #D1797D;
+}
 
 .medium-priority[type="checkbox"].filled-in:not(:checked) + label:after {
 	border: 2px solid #D4A27B;
 }
+.medium-priority[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #D4A27B;
+  background-color: #D4A27B;
+}
 
 .low-priority[type="checkbox"].filled-in:not(:checked) + label:after {
 	border: 2px solid #4B837F;
+}
+.low-priority[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #4B837F;
+  background-color: #4B837F;
 }
 
 // Setting priority background color on dropdown menu
@@ -158,9 +171,7 @@
 	}
 }
 
-.li--priority-color {
-	width:100px;
-}
+
 
 // Override sub menu dropdown highlight selection
 .nested-dropdown-content li:hover, .nested-dropdown-content li.active, .nested-dropdown-content li.selected .high-priority-background-menu {

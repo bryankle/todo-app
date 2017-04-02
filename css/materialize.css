@@ -6371,7 +6371,7 @@ textarea.materialize-textarea {
 
 [type="radio"]:checked + label:after,
 [type="radio"].with-gap:checked + label:after {
-  background-color: #26a69a;
+  background-color: red;
 }
 
 [type="radio"]:checked + label:after {
@@ -6598,6 +6598,15 @@ form p:last-child {
   height: 20px;
   border: 2px solid #26a69a;
   background-color: #26a69a;
+  z-index: 0;
+}
+
+.high-priority[type="checkbox"].filled-in:checked + label:after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D1797D;
+  background-color: #D1797D;
   z-index: 0;
 }
 
